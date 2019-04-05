@@ -28,7 +28,7 @@ function create () {
 
     // spawn player
   player = game.add.sprite(400,300, 'snakeball')
-
+  sprite.scale.setTo(20, 20)
     //  physics for player
   game.physics.arcade.enable(player)
   player.body.collideWorldBounds = true
@@ -78,6 +78,5 @@ function collectfood (player, foods) {
     // updates score
   score += 10
   scoreText.text = 'Score:' + score
-  player.scale.setTo(16*0.012(score), 16*0.012(score));
 }
 }
