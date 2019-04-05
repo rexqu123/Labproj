@@ -78,5 +78,6 @@ function collectfood (player, foods) {
     // updates score
   score += 10
   scoreText.text = 'Score:' + score
+  sprite.scale.setTo(0.5*0.25(score), 0.5*0.25(score));
 }
 }
