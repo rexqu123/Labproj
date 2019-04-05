@@ -68,11 +68,9 @@ function update () {
   {
     player.body.velocity.y = -150
   }
-  else if (cursors.down.isDown) {
+  else if (cursors.down.isDown) 
+  {
     player.body.velocity.y = 150
-  }
-  else if (cursors.spaceKey.isDown) {
-    player.body.velocity.y = 400
   }
   else {
   }
