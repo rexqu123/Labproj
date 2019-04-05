@@ -70,11 +70,9 @@ function update () {
   {
     player.body.velocity.y = 150
   }
-  else 
-  {
+  else {
   }
-  
-  player.rotation = game.physics.arcade.moveToPointer(player, 60, game.input.activePointer, 500);
+
 function collectfood (player, foods) {
     // Removes the food
   foods.kill()
