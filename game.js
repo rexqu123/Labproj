@@ -49,7 +49,6 @@ function create () {
     //  Enable arrowkeys
   cursors = game.input.keyboard.createCursorKeys()
   
-  var spaceBar = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
 }
 
 function update () {
@@ -74,10 +73,7 @@ function update () {
   {
     player.body.velocity.y = 150
   }
-  else if(spaceBar.isDown)
-  {
-    player.body.velocity.y = -400
-  }
+
   else {
   }
   // increase in size based on score
