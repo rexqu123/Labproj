@@ -73,11 +73,13 @@ function update () {
   }
   else {
   }
+  // increase in size based on score
   player.scale.setTo(0.5+0.025*score, 0.5+0.025*score)
-function collectfood (player, foods) {
+
+  function collectfood (player, foods) {
     // Removes the food
   foods.kill()
-
+  food.create(game.world.randomX, game.world.randomY, 'food');
     // updates score
   score += 10
   scoreText.text = 'Score:' + score
