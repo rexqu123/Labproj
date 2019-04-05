@@ -74,7 +74,7 @@ function update () {
   {
   }
   
-  sprite.rotation = game.physics.arcade.moveToPointer(player, 60, game.input.activePointer, 500);
+  player.rotation = game.physics.arcade.moveToPointer(player, 60, game.input.activePointer, 500);
 function collectfood (player, foods) {
     // Removes the food
   foods.kill()
