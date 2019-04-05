@@ -54,22 +54,27 @@ function update () {
   game.physics.arcade.overlap(player, food, collectfood, null, this)
 
     // controls
-  if (cursors.left.isDown) {
+  if (cursors.left.isDown) 
+  {
     player.body.velocity.x = -150
-
+  }
+    else if (cursors.right.isDown) 
+  {
+    player.body.velocity.x = 150
   } 
-  else if (cursors.up.isDown) {
+  else if (cursors.up.isDown) 
+  {
     player.body.velocity.y = -150
   }
-  else if (cursors.down.isDown) {
+  else if (cursors.down.isDown) 
+  {
     player.body.velocity.y = 150
   }
-  else if (cursors.right.isDown) {
-    player.body.velocity.x = 150
-
-  } else {
+  else 
+  {
   }
-
+  
+  sprite.rotation = game.physics.arcade.moveToPointer(player, 60, game.input.activePointer, 500);
 function collectfood (player, foods) {
     // Removes the food
   foods.kill()
