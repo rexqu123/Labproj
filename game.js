@@ -39,7 +39,7 @@ function create () {
     //  spawn food
   food = game.add.group()
   food.enableBody = true
-  for (var i = 0; i < 12; i++) {
+  for (var i = 0; i < 25; i++) {
     food.create(game.world.randomX, game.world.randomY, 'food');
   }
 
