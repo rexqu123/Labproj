@@ -55,7 +55,7 @@ function create () {
 function update () {
 
     //  Call callectionfood() if player overlaps with food ball
-  game.physics.arcade.overlap(player, food, collectfood, null, this)
+  game.physics.arcade.overlap(player, food, collectfood)
 
     // controls
   if (cursors.left.isDown) 
