@@ -71,7 +71,6 @@ function update () {
   else {
   }
 
-
 function collectfood (player, foods) {
     // Removes the food
   foods.kill()
@@ -79,5 +78,6 @@ function collectfood (player, foods) {
     // updates score
   score += 10
   scoreText.text = 'Score:' + score
+  player.scale.setTo(16*0.012(score), 16*0.012(score));
 }
 }
