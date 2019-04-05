@@ -28,7 +28,7 @@ function create () {
 
     // spawn player
   player = game.add.sprite(400,300, 'snakeball')
-  player.scale.setTo(20, 20)
+  player.scale.setTo(5, 5)
     //  physics for player
   game.physics.arcade.enable(player)
   player.body.collideWorldBounds = true
