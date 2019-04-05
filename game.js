@@ -1,5 +1,5 @@
 // Initialize the Phaser Game object and set default game window size
-const game = new Phaser.Game(800, 600, Phaser.AUTO, '', {
+const game = new Phaser.Game(1920, 1080, Phaser.AUTO, '', {
   preload: preload,
   create: create,
   update: update })
@@ -83,5 +83,10 @@ function update () {
     // updates score
   score += 10
   scoreText.text = 'Score:' + score
+}
+
+if (score == 500){
+  alert ("winner is you")
+  score = 0
 }
 }
