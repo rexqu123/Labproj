@@ -71,7 +71,6 @@ function update () {
   else {
   }
 
-  player.scale.setTo(16*0.012(score), 16*0.012(score));
 
 function collectfood (player, foods) {
     // Removes the food
