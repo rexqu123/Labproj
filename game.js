@@ -37,8 +37,7 @@ function create () {
   food = game.add.group()
   food.enableBody = true
   for (var i = 0; i < 12; i++) {
-    let foods = food.create(i * 70, 0, 'food')
-
+    food.create(game.world.randomX, game.world.randomY, 'food');
   }
 
     //  create scoreboard
@@ -66,8 +65,7 @@ function update () {
   {
     player.body.velocity.y = -150
   }
-  else if (cursors.down.isDown) 
-  {
+  else if (cursors.down.isDown) {
     player.body.velocity.y = 150
   }
   else {
