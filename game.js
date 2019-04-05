@@ -24,7 +24,7 @@ function create () {
   game.physics.startSystem(Phaser.Physics.ARCADE)
 
     //  backround titleSprite so the picture repeats itself
-  game.add.tileSprite(0, 0,800,600, 'grid')
+  game.add.tileSprite(0, 0,1920,1080, 'grid')
 
     // spawn player
   
