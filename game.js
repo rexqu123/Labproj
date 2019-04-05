@@ -71,6 +71,9 @@ function update () {
   else if (cursors.down.isDown) {
     player.body.velocity.y = 150
   }
+  else if (cursors.spaceKey.isDown) {
+    player.body.velocity.y = 400
+  }
   else {
   }
   // increase in size based on score
@@ -84,7 +87,7 @@ function update () {
   score += 10
   scoreText.text = 'Score:' + score
 }
-
+// win condition
 if (score == 100){
   alert ("winner is you")
   score = 0
