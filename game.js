@@ -85,7 +85,7 @@ function update () {
   scoreText.text = 'Score:' + score
 }
 
-if (score == 500){
+if (score == 100){
   alert ("winner is you")
   score = 0
 }
